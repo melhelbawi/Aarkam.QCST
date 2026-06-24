@@ -1,0 +1,86 @@
+# ============================================================================
+# CST / QCST Dual License
+# Non-commercial research use only.
+# Commercial use requires explicit permission.
+# Copyright (c) 2025 Mohamed Mohamed Elhelbawi
+# All rights reserved.
+# See LICENSE file in the project root for full license information.
+# ============================================================================
+# Quantum-Enhanced Contextual Spectrum Tokenization (CST)
+# Requirements for Quantum Module
+# ============================================================================
+
+# Core Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Quantum Computing Libraries
+# ============================================================================
+# PennyLane: Primary quantum machine learning framework
+pennylane>=0.32.0
+pennylane-qiskit>=0.33.0
+pennylane-lightning>=0.32.0
+
+# Qiskit: Quantum circuit simulation and hardware access
+qiskit>=0.43.0
+qiskit-aer>=0.13.0
+qiskit-ibm-runtime>=0.13.0
+qiskit-machine-learning>=0.7.0
+
+# Optional: Hardware backends
+# qiskit-ionq>=0.3.0  # IonQ backend
+# qiskit-braket-provider>=0.2.0  # AWS Braket backend
+
+# NLP and Transformers
+# ============================================================================
+transformers>=4.30.0
+tokenizers>=0.13.0
+datasets>=2.12.0
+
+# Numerical and Scientific Computing
+# ============================================================================
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+
+# Visualization and Monitoring
+# ============================================================================
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+tensorboard>=2.13.0
+wandb>=0.15.0
+
+# Utilities and Configuration
+# ============================================================================
+pyyaml>=6.0
+tqdm>=4.65.0
+psutil>=5.9.0
+requests>=2.31.0
+Pillow>=9.5.0
+
+# Development and Testing
+# ============================================================================
+pytest>=7.3.0
+pytest-cov>=4.1.0
+black>=23.3.0
+flake8>=6.0.0
+mypy>=1.3.0
+pre-commit>=3.3.0
+jupyter>=1.0.0
+ipython>=8.10.0
+
+# Optional: Performance and Optimization
+# ============================================================================
+# numba>=0.57.0  # JIT compilation for performance
+# ray>=2.5.0  # Distributed computing
+# accelerate>=0.20.0  # Training acceleration
+
+# Optional: Advanced Features
+# ============================================================================
+# faiss-cpu>=1.7.4  # Efficient similarity search (use faiss-gpu for GPU)
+# librosa>=0.10.0  # Audio processing
+# opencv-python>=4.7.0  # Computer vision
+# sentence-transformers>=2.2.0  # Advanced text embeddings

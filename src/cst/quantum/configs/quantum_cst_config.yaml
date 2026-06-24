@@ -1,0 +1,85 @@
+# CST / QCST Dual License
+# Non-commercial research use only.
+# Commercial use requires explicit permission.
+# Copyright (c) 2025 Mohamed Mohamed Elhelbawi
+# All rights reserved.
+# See LICENSE file in the project root for full license information.
+
+ambiguity_threshold: 0.5
+ambiguous_word_ids: []
+audio_dim: 768
+batch_size: 32
+cache_size: 10000
+char_embed_dim: 64
+char_vocab_size: 256
+clip_dim: 512
+context_feature_dim: 128
+context_window: 64
+contrastive_weight: 0.3
+d_model: 768
+document_encoding_dim: 128
+drift_regularization_weight: 0.1
+dropout: 0.1
+embed_dim: 64
+fragment_encoding_dim: 256
+fused_dim: 384
+gradient_clip_norm: 1.0
+hidden_dim: 512
+inference_cache_ttl: 3600
+l1_cache_size: 5000
+learning_rate: 0.0001
+max_batch_size: 64
+max_epochs: 100
+max_sequence_length: 512
+metadata_dim: 64
+mlm_weight: 0.7
+multimodal_dim: 512
+num_authors: 10000
+num_domains: 100
+num_heads: 12
+num_layers: 12
+quantum_config:
+  backend: default.qubit
+  diff_method: best
+  enable_quantum: true
+  encoding_type: amplitude
+  entanglement_pattern: full
+  feature_scaling: normalize
+  gradient_method: parameter_shift
+  log_circuit_depth: true
+  log_gate_count: true
+  max_features_per_qubit: 2
+  measurement_type: pauli_xyz
+  n_layers: 3
+  n_qubits: 8
+  noise_model: null
+  quantum_ambiguity_classifier: false
+  quantum_attention_mechanism: true
+  quantum_fragment_encoder: true
+  quantum_information_fuser: true
+  quantum_lr: 0.01
+  quantum_mode: hybrid
+  quantum_optimizer: adam
+  quantum_weight: 0.5
+  rotation_gates:
+  - RX
+  - RY
+  - RZ
+  shots: null
+  track_quantum_metrics: true
+  use_adaptive_weight: true
+  use_data_reuploading: true
+  use_parameter_shift_rules: true
+  use_quantum_attention: true
+  use_quantum_pooling: true
+  use_stochastic_measurement: true
+quantum_entanglement_regularization: 0.05
+quantum_loss_weight: 0.2
+raw_doc_dim: 1024
+reference_momentum: 0.999
+reference_update_freq: 1000
+temperature: 0.07
+use_quantum_contrastive: true
+vocab_size: 30522
+warmup_steps: 10000
+weight_decay: 0.01
